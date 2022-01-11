@@ -10,17 +10,6 @@
 :> mv key/ca.crt ./
 ~~~
 
-# GOPATH 지정
-$topath 진짜로 입력하시지 마시고 k8s-example 앞에 임의 경로가 존재한다면 그 경로를 적어야 합니다.
-## csh
-~~~bash
-:> setenv GOPATH $topath/k8s-example/AdmissionController/Go
-~~~
-## bash
-~~~bash
-:> export GOTPATH=$topath/k8s-example/AdmissionController/Go
-~~~
-
 # GO BUILD 수행 
 ## go.mod 확인
 ## k8s.io/api 옛날 버전을 사용 하는 이유
