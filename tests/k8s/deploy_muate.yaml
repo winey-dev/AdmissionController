@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-mutation-deploy
+  namespace: yiaw
+  labels:
+    app: busybox
+  annotations:
+    yiaw.webhook/mutation: "true"
+spec:
+  containers:
+  - name: main
+    image: busybox
+    command: ["sleep", "3600"]
